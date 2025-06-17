@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتب المحامي أحمد العنزي | حماية حقوقك بخبرة وتميز</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <style>
+        /* Unified Color Variables */
+        :root {
+            --primary-dark-blue: #2c3e50; /* كحلي داكن */
+            --darker-blue: #1a252f; /* أسود مزرق */
+            --medium-blue: #34495e; /* كحلي أفتح */
+            --gold-accent: #ffd700; /* ذهبي جذاب (جديد) */
+            --red-accent: #e74c3c; /* أحمر (أصلي للمناطق التي لم تتغير) */
+            --white-color: #FFFFFF;
+            --light-bg: #f8f9fa; /* رمادي فاتح جداً للخلفيات */
+            --dark-text: #343a40; /* رمادي داكن للنصوص */
+            --text-color-primary: #2c3e50; /* لون نص أساسي */
+            --success-green: #27ae60; /* أخضر للنجاح */
+            --warning-orange: #f39c12; /* برتقالي للتحذير */
+            --light-blue-bg: #f0f8ff; /* أليس بلو (خلفية فاتحة للحسابات) */
+            --primary-dark-blue-rgb: 44, 62, 80; /* RGB for primary-dark-blue for transparency */
+            --light-blue-bg-rgb: 240, 248, 255; /* RGB for light-blue-bg for transparency */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth; /* Smooth scroll for anchor links */
+        }
+
+        body {
+            font-family: 'Tajawal', 'Cairo', sans-serif; /* Prioritize Tajawal, fallback to Cairo */
+            background: linear-gradient(135deg, var(--light-bg) 0%, #e0eafc 100%); /* Animated gradient from second code */
+            background-size: 200% 200%;
+            animation: gradientAnimation 10s ease infinite alternate;
+            color: var(--text-color-primary);
+            line-height: 1.8; /* Adjusted for better readability */
+            overflow-x: hidden;
+            direction: rtl; /* For Arabic */
+            text-align: right; /* Default text alignment for RTL */
+        }
+
+        /* Gradient background animation from second code */
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Hero section (from first code) */
+        .hero {
+            background: linear-gradient(135deg, var(--darker-blue), var(--primary-dark-blue));
+            color: var(--white-color);
+            padding: 6rem 0;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        }
+
+        .parallax-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            will-change: transform;
+        }
+
+        .layer-deep-back { background-image: url('https://images.unsplash.com/photo-1590240974868-b7100b213824?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); opacity: 0.15; z-index: 1; }
+        .layer-back { background-image: url('https://images.unsplash.com/photo-1621379761502-31518f8c44c5?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); opacity: 0.1; z-index: 2; }
+        .layer-middle { background-image: url('https://images.unsplash.com/photo-1576086217646-95f2d18471e8?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); opacity: 0.05; z-index: 3; }
+        .layer-front { background-image: url('https://images.unsplash.com/photo-1593113596542-a8c630739988?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); opacity: 0.02; z-index: 4; }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            z-index: 5;
+            position: relative;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            padding-top: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 2rem;
+            font-weight: 900;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInSlideUp 1s ease-out forwards;
+            animation-delay: 0.5s;
+        }
+
+        .hero p {
+            font-size: 1.8rem;
+            max-width: 900px;
+            margin: 0 auto 4rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInSlideUp 1s ease-out forwards;
+            animation-delay: 0.8s;
+        }
+
+        @keyframes fadeInSlideUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Animated slogan section (from first code) */
+        .animated-slogan-section {
+            background-color: var(--medium-blue);
+            color: var(--white-color);
+            padding: 8rem 0;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+        }
+
+        .animated-slogan-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .animated-slogan-content h2 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 3s steps(30, end) forwards, blink-caret .75s step-end infinite;
+            border-right: .15em solid var(--red-accent); /* Kept red for typing animation */
+            width: 0;
+            margin: 0 auto;
+        }
+
+        @keyframes typing { from { width: 0 } to { width: 100% } }
+        @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: var(--red-accent); } }
+
+        /* Section Title (Unified - using second code's style as base) */
+        .section-title {
+            text-align: center;
+            font-size: 3em;
+            color: var(--primary-dark-blue);
+            margin: 70px 0 40px;
+            position: relative;
+        }
+
+        .section-title h2 { /* Targeting the actual h2 within section-title */
+            font-size: 2.5rem; /* Default size from first code */
+            color: var(--primary-dark-blue);
+            margin-bottom: 1rem;
+            font-weight: 800;
+            position: relative;
+            display: inline-block;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1); /* Added subtle text shadow */
+        }
+
+        /* Underline for section title (from second code) */
+        .section-title h2::after, .section-title::after { /* Apply to h2 directly and fallback for general sections */
+            content: "";
+            display: block;
+            width: 80px; /* From first code */
+            height: 4px; /* From first code */
+            background: var(--gold-accent); /* Changed to gold accent */
+            margin: 15px auto 0;
+            border-radius: 3px;
+            animation: expandLineWidth 1.5s ease-out forwards;
+        }
+
+        @keyframes expandLineWidth { from { width: 0; } to { width: 80px; } }
+
+        .section-title p {
+            font-size: 1.1rem;
+            color: var(--dark-text);
+        }
+
+        /* About Lawyer Section (from first code) */
+        .about-lawyer-section {
+            padding: 8rem 0 5rem;
+            background-color: var(--white-color);
+            text-align: center;
+        }
+
+        .about-lawyer-flex-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .lawyer-image-col { flex: 1; min-width: 250px; text-align: center; position: relative; }
+
+        .lawyer-photo-main {
+            width: 280px; height: 280px; border-radius: 50%; object-fit: cover;
+            border: 10px solid var(--medium-blue);
+            box-shadow: 0 0 0 15px rgba(var(--primary-dark-blue-rgb), 0.1), 0 10px 40px rgba(0,0,0,0.25);
+            transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .lawyer-photo-main:hover {
+            transform: scale(1.05) rotate(-3deg);
+            border-color: var(--gold-accent);
+            box-shadow: 0 0 0 18px rgba(var(--primary-dark-blue-rgb), 0.15), 0 15px 50px rgba(0,0,0,0.35);
+        }
+        
+        .lawyer-photo-main:active {
+            transform: scale(0.98) rotate(5deg) translateY(2px);
+            border-color: var(--gold-accent);
+            box-shadow: 0 0 0 10px rgba(var(--primary-dark-blue-rgb), 0.2), 0 5px 20px rgba(0,0,0,0.4);
+            transition: all 0.1s ease-out;
+        }
+
+        .lawyer-text-col { flex: 2; min-width: 300px; text-align: right; }
+
+        .about-lawyer-content h2 { /* Specific to about section title */
+            font-size: 2.5rem; color: var(--darker-blue); margin-bottom: 1.5rem;
+            font-weight: 800; text-align: center; width: 100%; padding-bottom: 2rem;
+        }
+
+        .lawyer-text-col p {
+            font-size: 1.25rem; color: var(--dark-text); margin-bottom: 1.5rem;
+            line-height: 2; text-align: justify;
+        }
+
+        /* Why Choose Us Section (from first code) */
+        .why-choose-us-section {
+            background: linear-gradient(135deg, var(--primary-dark-blue), var(--darker-blue));
+            color: var(--white-color);
+            padding: 6rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .why-choose-us-section .section-title {
+            color: var(--white-color);
+            margin-bottom: 5rem;
+        }
+
+        .why-choose-us-section .section-title h2 {
+            color: var(--white-color);
+        }
+
+        .why-choose-us-section .section-title h2::after { 
+            background: var(--gold-accent); 
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .feature-item {
+            background-color: rgba(255, 255, 255, 0.08);
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            transition: all 0.4s ease-out;
+            border: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(5px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-15px) scale(1.03);
+            background-color: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+        }
+
+        .feature-item i {
+            font-size: 3.5rem;
+            color: var(--gold-accent); /* Changed to gold */
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-item:hover i { transform: rotateY(360deg); }
+
+        .feature-item h3 {
+            font-size: 1.8rem;
+            color: var(--white-color);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .feature-item p {
+            font-size: 1.05rem;
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.6;
+        }
+
+        /* Services Section (from first code) */
+        .services-section {
+            padding: 5rem 0;
+            background-color: var(--light-bg);
+            position: relative;
+        }
+        
+        .services-section .section-title h2::after { background: var(--gold-accent); } /* Changed to gold */
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .service-card {
+            background: var(--white-color);
+            border-radius: 15px;
+            padding: 2.5rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            border-right: 5px solid var(--red-accent); /* Kept red for services */
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 18px 45px rgba(0,0,0,0.2); /* Enhanced shadow on hover */
+            border-color: var(--primary-dark-blue);
+        }
+
+        .service-card h3 {
+            font-size: 1.6rem;
+            color: var(--darker-blue);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            padding-bottom: 1rem;
+        }
+
+        .service-card h3 i {
+            margin-left: 15px;
+            color: var(--red-accent); /* Kept red for services */
+            font-size: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover h3 i { transform: rotate(10deg); }
+
+        .service-card p {
+            font-size: 1rem;
+            color: var(--dark-text);
+            margin-top: 1rem;
+            flex-grow: 1;
+        }
+
+        .service-features { list-style: none; padding: 0; margin-top: 1rem; }
+        .service-features li {
+            margin-bottom: 0.8rem; position: relative; padding-right: 2rem;
+            font-size: 1.05rem; color: var(--dark-text);
+        }
+        .service-features li::before {
+            content: "\f00c"; font-family: "Font Awesome 5 Free"; font-weight: 900;
+            color: var(--success-green); position: absolute; right: 0; top: 50%;
+            transform: translateY(-50%); font-size: 0.9em;
+        }
+
+        /* Booking Section (from first code) */
+        .booking-section {
+            background-color: var(--medium-blue);
+            padding: 6rem 0;
+            color: var(--white-color);
+            text-align: center;
+        }
+
+        .booking-section .section-title { 
+            /* This targets the container holding the h2 and p for the section title */
+            color: var(--white-color); /* This applies to the <p> tag inside, which is white */
+        }
+        
+        /* Specific override for the h2 inside .booking-section .section-title */
+        .booking-section .section-title h2 {
+            color: var(--dark-text); /* Changed to dark-text (blackish) as requested */
+        }
+
+        .booking-section .section-title h2::after { background: var(--gold-accent); } /* Changed to gold */
+
+        .booking-form-container {
+            background: rgba(255, 255, 255, 0.1); /* Use direct rgba for consistency with original opacity */
+            max-width: 700px;
+            margin: auto;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        .booking-form-container h2 {
+            text-align: center; color: var(--white-color); margin-bottom: 2rem; font-size: 2rem;
+        }
+        .booking-form-container input, 
+        .booking-form-container textarea, 
+        .booking-form-container button {
+            width: 100%; padding: 15px; margin-top: 15px; font-size: 1.1rem;
+            border-radius: 10px; border: 1px solid rgba(255,255,255,0.3);
+            background-color: rgba(255,255,255,0.05); color: var(--white-color);
+            direction: rtl;
+        }
+        .booking-form-container input::placeholder, .booking-form-container textarea::placeholder { color: rgba(255,255,255,0.7); }
+        .booking-form-container input:focus, .booking-form-container textarea:focus {
+            outline: none; border-color: var(--red-accent); box-shadow: 0 0 10px rgba(231, 76, 60, 0.5);
+        }
+
+        .booking-form-container button {
+            background-color: var(--red-accent);
+            color: var(--white-color); cursor: pointer; transition: 0.3s;
+            font-weight: bold; letter-spacing: 1px; margin-top: 30px;
+        }
+        .booking-form-container button:hover {
+            background-color: #c0392b; transform: translateY(-3px);
+        }
+        .booking-form-container #response {
+            color: var(--white-color); margin-top: 20px; font-size: 1.1rem;
+            font-weight: 500; opacity: 0; transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+            transform: translateY(10px);
+        }
+        .booking-form-container #response.show { opacity: 1; transform: translateY(0); }
+
+        /* Card Grid for Social Links (from second code) */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 35px;
+            padding: 30px 0;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95); /* Adjusted to ensure text clarity */
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* shadow-medium */
+            padding: 35px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-15px) scale(1.03);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25); /* shadow-strong */
+        }
+
+        .card::before {
+            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 8px;
+            background: linear-gradient(90deg, var(--primary-dark-blue), var(--gold-accent));
+            transform: scaleX(0); transform-origin: right; transition: transform 0.5s ease;
+        }
+
+        .card:hover::before { transform: scaleX(1); transform-origin: left; }
+
+        .card h3 {
+            color: var(--primary-dark-blue); margin-bottom: 25px; font-size: 2em;
+            position: relative; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3::after {
+            content: ''; display: block; width: 60px; height: 3px;
+            background: var(--gold-accent);
+            margin: 12px auto 0; border-radius: 2px;
+        }
+
+        /* Social Link Styling (from second code) */
+        .social-link {
+            display: flex; align-items: center; justify-content: center;
+            text-decoration: none;
+            color: var(--dark-text); /* Default text color for links */
+            background: rgba(var(--light-blue-bg-rgb), 0.8);
+            border-radius: 10px; padding: 15px 25px; margin-bottom: 20px;
+            transition: all 0.3s ease; font-size: 1.2em; font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* shadow-light */
+        }
+
+        /* Ensure text is clearly visible on hover */
+        .social-link:hover {
+            background: var(--primary-dark-blue);
+            color: var(--white-color); /* Changed text color to white on hover */
+            transform: translateX(-8px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* shadow-medium */
+        }
+
+        .social-link i {
+            margin-left: 20px; font-size: 1.6em;
+            color: var(--primary-dark-blue); /* Default icon color */
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-link:hover i {
+            color: var(--gold-accent); /* Icon color on hover */
+            transform: scale(1.1);
+        }
+
+        /* Original app icon colors with adjusted hover for clarity */
+        .fa-whatsapp { color: #25D366; }
+        .social-link:hover .fa-whatsapp { color: #25D366; filter: brightness(1.2); } /* Brighter on hover */
+
+        .fa-instagram {
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        .social-link:hover .fa-instagram { -webkit-text-fill-color: var(--gold-accent); } /* Use gold on hover if original color is hard to see */
+
+        .fa-facebook-f { color: #1877F2; }
+        .social-link:hover .fa-facebook-f { color: #1877F2; filter: brightness(1.2); }
+
+        .fa-snapchat-ghost { color: #FFFC00; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+        .social-link:hover .fa-snapchat-ghost { color: #FFFC00; text-shadow: -1px 0 var(--darker-blue), 0 1px var(--darker-blue), 1px 0 var(--darker-blue), 0 -1px var(--darker-blue); filter: brightness(1.1); } /* Darker shadow on hover */
+
+        .fa-x-twitter { color: #000; }
+        .social-link:hover .fa-x-twitter { color: var(--gold-accent); } /* Change to gold on hover */
+
+        .fa-tiktok {
+            background: linear-gradient(90deg, #000000 0%, #ffffff 50%, #ff0050 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        .social-link:hover .fa-tiktok { -webkit-text-fill-color: var(--gold-accent); } /* Change to gold on hover */
+        
+        .fa-telegram-plane { color: #0088cc; }
+        .social-link:hover .fa-telegram-plane { color: #0088cc; filter: brightness(1.2); }
+
+
+        /* Reveal Animations (from first code) */
+        .reveal { opacity: 0; transition: all 1s ease-out; }
+        .reveal.active { opacity: 1; }
+        .reveal.fade-bottom { transform: translateY(50px); }
+        .reveal.fade-bottom.active { transform: translateY(0); }
+        .reveal.fade-left { transform: translateX(-50px); }
+        .reveal.fade-left.active { transform: translateX(0); }
+        .reveal.fade-right { transform: translateX(50px); }
+        .reveal.fade-right.active { transform: translateX(0); }
+
+        /* Custom rotateIn for social links */
+        .animate__rotateIn { animation: rotateIn 1s ease-out; }
+        @keyframes rotateIn {
+            from { transform-origin: center; transform: rotate(-200deg); opacity: 0; }
+            to { transform-origin: center; transform: translate(0, 0); opacity: 1; }
+        }
+
+        /* Footer (Unified - using second code's structure and refined from first) */
+        .footer {
+            background: var(--darker-blue); /* Used darker-blue for footer */
+            color: var(--light-text);
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 70px;
+            box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer::before {
+            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 5px;
+            background: var(--gold-accent);
+        }
+
+        .footer h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            opacity: 0.85;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .contact-info a {
+            color: var(--white-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            transition: color 0.3s ease, transform 0.3s ease;
+            font-size: 1.1rem;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Added text shadow for clarity */
+        }
+
+        .contact-info a:hover {
+            color: var(--gold-accent); /* Changed to gold */
+            transform: translateY(-3px);
+            text-shadow: 1px 1px 5px var(--gold-accent); /* Brighter shadow on hover */
+        }
+
+        .contact-info i {
+            margin-left: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero { height: 70vh; }
+            .hero h1 { font-size: 3.2rem; }
+            .hero p { font-size: 1.5rem; }
+            .animated-slogan-section { padding: 6rem 0; }
+            .animated-slogan-content h2 { font-size: 2.8rem; white-space: normal; animation: none; border-right: none; width: auto; }
+            .about-lawyer-flex-container { flex-direction: column; text-align: center; }
+            .lawyer-image-col { min-width: unset; order: 1; }
+            .lawyer-text-col { min-width: unset; order: 2; text-align: center; }
+            .lawyer-photo-main { width: 250px; height: 250px; }
+            .features-grid { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+            .booking-form-container { padding: 30px; max-width: 90%; }
+            .card-grid { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); } /* Adjusted for cards */
+        }
+
+        @media (max-width: 768px) {
+            .hero { height: 60vh; padding: 4rem 0; clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%); }
+            .hero h1 { font-size: 2.5rem; }
+            .hero p { font-size: 1.2rem; margin-bottom: 3rem; }
+            .animated-slogan-section { padding: 5rem 0; }
+            .animated-slogan-content h2 { font-size: 2.2rem; }
+            .about-lawyer-section { padding: 6rem 0 3rem; }
+            .about-lawyer-content h2 { font-size: 2rem; padding-bottom: 1.5rem; }
+            .lawyer-photo-main { width: 200px; height: 200px; border-width: 6px; box-shadow: 0 0 0 10px rgba(var(--primary-dark-blue-rgb), 0.1), 0 5px 20px rgba(0,0,0,0.2); }
+            .lawyer-text-col p { font-size: 1.1rem; line-height: 1.8; }
+            .section-title h2 { font-size: 2rem; }
+            .services-grid { grid-template-columns: 1fr; }
+            .service-card { padding: 2rem; }
+            .features-grid { grid-template-columns: 1fr; }
+            .feature-item { padding: 2rem; }
+            .booking-section { padding: 4rem 0; }
+            .booking-form-container { padding: 25px; }
+            .booking-form-container h2 { font-size: 1.8rem; margin-bottom: 1.5rem; }
+            .booking-form-container input, .booking-form-container textarea, .booking-form-container button { padding: 12px; font-size: 1rem; }
+            .card-grid { grid-template-columns: 1fr; } /* Single column for cards */
+            .card { padding: 30px; }
+            .social-link { font-size: 1em; padding: 12px 20px; }
+            .social-link i { font-size: 1.3em; margin-left: 10px; }
+        }
+
+        @media (max-width: 480px) {
+            .hero { height: 50vh; padding: 3rem 0; }
+            .hero h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+            .hero p { font-size: 0.9rem; margin-bottom: 2rem; }
+            .animated-slogan-section { padding: 3rem 0; clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%); }
+            .animated-slogan-content h2 { font-size: 1.5rem; text-align: center; animation: none; border-right: none; width: auto; }
+            .lawyer-photo-main { width: 150px; height: 150px; border-width: 4px; box-shadow: 0 0 0 8px rgba(var(--primary-dark-blue-rgb), 0.1), 0 3px 15px rgba(0,0,0,0.2); }
+            .lawyer-text-col p { font-size: 0.95rem; }
+            .section-title h2 { font-size: 1.6rem; }
+            .contact-info { flex-direction: column; gap: 1.2rem; }
+            .feature-item h3 { font-size: 1.4rem; }
+            .feature-item p { font-size: 0.9rem; }
+            .booking-form-container { padding: 15px; }
+            .booking-form-container h2 { font-size: 1.4rem; }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero" id="hero-section">
+        <div class="parallax-layer layer-deep-back"></div>
+        <div class="parallax-layer layer-back"></div>
+        <div class="parallax-layer layer-middle"></div>
+        <div class="parallax-layer layer-front"></div>
+        
+        <div class="hero-content">
+            <h1 class="animate__animated animate__slideInDown">مكتب المحامي احمد العنزي</h1>
+            <p class="animate__animated animate__slideInUp">نقدم حلولاً قانونية متكاملة باحترافية عالية لحماية حقوقك ومصالحك</p>
+        </div>
+    </header>
+
+    <section class="about-lawyer-section reveal fade-bottom">
+        <div class="about-lawyer-content">
+            <h2 class="section-title">عن المحامي أحمد العنزي</h2>
+            <div class="about-lawyer-flex-container">
+                <div class="lawyer-image-col">
+                    <div style="text-align: center;">
+                        <img src="444.jpg" alt="صورة المحامي احمد العنزي" class="lawyer-photo-main">
+                        <p style="font-size: 18px; font-weight: bold; margin-top: 10px;">المحامي احمد العنزي</p>
+                    </div>
+                </div>
+                <div class="lawyer-text-col">
+                    <p><strong>المحامي أحمد العنزي</strong> هو اسم يمثل الخبرة، النزاهة، والتفاني في عالم القانون. مع أكثر من 15 عاماً من الخبرة العملية في مختلف التخصصات القانونية، بنى المحامي الموسوي سمعة طيبة كأحد أبرز الكفاءات القانونية في المنطقة. يتميز بفهمه العميق للقانون، وقدرته على تحليل القضايا المعقدة، وتقديم استراتيجيات قانونية مبتكرة وفعالة تضمن تحقيق أفضل النتائج لعملائه.</p>
+                    <p>يؤمن المحامي الموسوي بأن العدالة حق للجميع، وأن الدفاع عن حقوق الأفراد والشركات هو رسالته الأساسية. يسعى جاهداً لتقديم المشورة القانونية الواضحة والمباشرة، وتمثيل العملاء بأعلى مستويات الاحترافية سواء داخل قاعات المحاكم أو من خلال آليات التسوية الودية. الالتزام بالشفافية والتواصل المستمر مع العميل هو جوهر عمله، لضمان أن يكون العميل على دراية كاملة بجميع جوانب قضيته.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose-us-section">
+        <div class="container">
+            <div class="section-title reveal fade-bottom">
+                <h2>لماذا تختار مكتب المحامي حسن جواد الموسوي؟</h2>
+                <p>نحن نلتزم بتقديم أعلى مستويات التميز القانوني والخدمة المخصصة لكل عميل.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-item reveal fade-left">
+                    <i class="fas fa-certificate"></i>
+                    <h3>خبرة لا تضاهى</h3>
+                    <p>أكثر من 15 عاماً من الخبرة العملية في مختلف فروع القانون، مما يضمن فهماً عميقاً للقضايا وتعامل فعال مع التحديات.</p>
+                </div>
+                
+                <div class="feature-item reveal fade-right">
+                    <i class="fas fa-user-tie"></i>
+                    <h3>احترافية وشفافية</h3>
+                    <p>نقدم خدماتنا بأعلى درجات الاحترافية والنزاهة، مع التزام تام بالشفافية في كل خطوة لضمان ثقة العميل وراحته.</p>
+                </div>
+                
+                <div class="feature-item reveal fade-left">
+                    <i class="fas fa-handshake-angle"></i>
+                    <h3>دعم شخصي ومخصص</h3>
+                    <p>كل قضية تُعامل باهتمام فردي، مع توفير استراتيجيات قانونية مخصصة تلبي الاحتياجات الفريدة لكل عميل.</p>
+                </div>
+                
+                <div class="feature-item reveal fade-right">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>حلول مبتكرة</h3>
+                    <p>نعمل على تطوير حلول قانونية إبداعية وفعالة تتجاوز الأساليب التقليدية، لضمان أفضل النتائج الممكنة لعملائنا.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="container">
+            <div class="section-title reveal fade-bottom">
+                <h2>خدماتنا القانونية المتخصصة</h2>
+                <p>نقدم مجموعة واسعة من الخدمات القانونية المصممة لتلبية احتياجاتك بدقة واحترافية.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card reveal fade-left">
+                    <h3><i class="fas fa-gavel"></i> الاستشارات القانونية</h3>
+                    <p>نقدم استشارات قانونية متعمقة وشاملة للأفراد والشركات في مختلف المجالات. نساعدك على فهم حقوقك وواجباتك، وتحليل المخاطر القانونية المحتملة، وصياغة القرارات المستنيرة قبل اتخاذ أي خطوة قانونية. تشمل استشاراتنا الرأي القانوني، التحليل التشريعي، وتوجيهات الامتثال.</p>
+                </div>
+                
+                <div class="service-card reveal fade-right">
+                    <h3><i class="fas fa-balance-scale"></i> تمثيل العملاء في المحاكم</h3>
+                    <p>يتولى مكتبنا تمثيل العملاء في جميع درجات التقاضي وأمام كافة الجهات القضائية وشبه القضائية. سواء كنت مدعياً أو مدعى عليه في قضايا مدنية، جنائية، تجارية، إدارية، أو عمالية، فإننا نضمن لك دفاعاً قوياً ومحترفاً يهدف إلى حماية مصالحك وتحقيق أفضل النتائج القضائية الممكنة.</p>
+                </div>
+                
+                <div class="service-card reveal fade-left">
+                    <h3><i class="fas fa-home"></i> قضايا الأحوال الشخصية</h3>
+                    <p>نقدم الدعم القانوني الحساس والمختص في قضايا الأحوال الشخصية، بما في ذلك قضايا الطلاق، الخلع، الحضانة، النفقة، رؤية الأطفال، وقضايا الميراث. نضمن لك تمثيلاً متفهماً يراعي الجوانب الإنسانية للعائلة، مع التركيز على حماية حقوقك وتحقيق تسويات عادلة ومنصفة.</p>
+                </div>
+                
+                <div class="service-card reveal fade-right">
+                    <h3><i class="fas fa-building"></i> قضايا العقارات</h3>
+                    <p>نوفر خبرة واسعة في جميع جوانب القانون العقاري، بما في ذلك صياغة ومراجعة عقود البيع والشراء والإيجار، وتسجيل الملكية، وحل النزاعات العقارية المتعلقة بالملكية أو الإيجار أو البناء. نضمن لك إتمام معاملاتك العقارية بأمان قانوني تام، وحماية استثماراتك.</p>
+                </div>
+                
+                <div class="service-card reveal fade-left">
+                    <h3><i class="fas fa-briefcase"></i> قضايا العمل والعمال</h3>
+                    <p>نقدم الدعم القانوني الشامل لأصحاب العمل والموظفين في جميع القضايا العمالية. سواء كانت نزاعات حول العقود، الأجور، الفصل التعسفي، مكافأة نهاية الخدمة، أو قضايا السلامة المهنية، فإننا نعمل على تسوية النزاعات وحماية حقوق الطرفين وفقاً لأحكام قانون العمل والأنظمة ذات الصلة.</p>
+                </div>
+                
+                <div class="service-card reveal fade-right">
+                    <h3><i class="fas fa-handshake"></i> القضايا التجارية</h3>
+                    <p>يختص مكتبنا بتقديم الدعم القانوني للشركات والمؤسسات التجارية. يشمل ذلك تأسيس الشركات وتسجيلها، صياغة ومراجعة العقود التجارية، اتفاقيات الشراكة، قضايا الإفلاس، وحل النزاعات التجارية المحلية والدولية. نساعدك على حماية مصالحك التجارية وتسهيل نمو أعمالك.</p>
+                </div>
+                
+                <div class="service-card reveal fade-left">
+                    <h3><i class="fas fa-shield-alt"></i> الدفاع الجنائي</h3>
+                    <p>نقدم تمثيلاً قانونياً قوياً ومحترفاً للأفراد المتهمين في جميع أنواع القضايا الجنائية، من الجنح البسيطة إلى الجرائم الخطيرة. نضمن لك دفاعاً شاملاً يشمل التحقيق، جمع الأدلة، حضور الجلسات، وتقديم الطعون والاستئنافات اللازمة لحماية حقوقك وضمان محاكمة عادلة.</p>
+                </div>
+                
+                <div class="service-card reveal fade-right">
+                    <h3><i class="fas fa-file-signature"></i> التوثيق الرسمي</h3>
+                    <p>نقدم خدمات التوثيق القانوني للمستندات المختلفة، بما في ذلك توثيق العقود، الوكالات، الإقرارات، والمحاضر الرسمية. نضمن أن تكون جميع مستنداتك مصاغة بشكل قانوني سليم ومعتمدة، مما يحمي مصالحك ويقلل من المخاطر القانونية المستقبلية.</p>
+                </div>
+                
+                <div class="service-card reveal fade-left">
+                    <h3><i class="fas fa-people-arrows"></i> التحكيم والوساطة</h3>
+                    <p>نسعى لتقديم حلول بديلة لفض النزاعات خارج المحاكم من خلال خدمات التحكيم والوساطة. نساعد الأطراف المتنازعة على الوصول إلى حلول ودية وعادلة، مما يوفر الوقت والجهد والتكاليف، ويحافظ على العلاقات التجارية والشخصية قدر الإمكان.</p>
+                </div>
+                
+                <div class="service-card reveal fade-right">
+                    <h3><i class="fas fa-scale-balanced"></i> الدفاع عن الحقوق المدنية</h3>
+                    <p>نتولى قضايا الدفاع عن الحقوق المدنية الأساسية، بما في ذلك قضايا التعويض عن الأضرار (المادية والمعنوية)، وحماية حقوق الإنسان، والطعون في القرارات الإدارية الظالمة. نلتزم بحماية حرياتك وحقوقك الدستورية والقانونية في مواجهة أي انتهاكات.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking-section reveal fade-bottom">
+        <div class="container">
+            <div class="section-title">
+                <h2>احجز موعداً مع المحامي أحمد العنزي </h2>
+                <p>املأ النموذج أدناه لطلب حجز موعد. سيقوم فريقنا بالتواصل معك في أقرب وقت.</p>
+            </div>
+            <div class="booking-form-container">
+                <h2>أحجز الآن</h2>
+                <form id="lawyerForm">
+                    <input type="text" id="name" placeholder="الاسم الكامل" required>
+                    <input type="number" id="age" placeholder="العمر" required>
+                    <input type="tel" id="phone" placeholder="رقم الهاتف" required>
+                    <textarea id="details" placeholder="تفاصيل القضية باختصار..." rows="5" required></textarea>
+                    <button type="submit">إرسال الطلب</button>
+                </form>
+                <p id="response"></p>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <section>
+            <h2 class="section-title animate__animated animate__zoomIn">الحسابات الشخصية للمحامي أحمد العنزي</h2>
+            <div class="card-grid">
+                <div class="card shadow-layer-1">
+                    <h3>واتساب</h3>
+                    <a href="https://wa.me/message/MHJSDBKKB3Y7A1" target="_blank" class="social-link shadow-layer-2 animate__animated animate__rotateIn">
+                        مراسلة عبر واتساب
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                <div class="card shadow-layer-1">
+                    <h3>فيسبوك</h3>
+                    <a href="https://www.facebook.com/share/199qBn4XBo/" target="_blank" class="social-link shadow-layer-2 animate__animated animate__rotateIn animate__delay-0-6s">
+                        زيارة صفحة فيسبوك
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div class="card shadow-layer-1">
+                    <h3>سناب شات</h3>
+                    <a href="https://www.snapchat.com/add/law6k?share_id=Xsx1z9l0xvQ&locale=ar-AE" target="_blank" class="social-link shadow-layer-2 animate__animated animate__rotateIn animate__delay-0-9s">
+                        إضافة على سناب شات
+                        <i class="fab fa-snapchat-ghost"></i>
+                    </a>
+                </div>
+                <div class="card shadow-layer-1">
+                    <h3>منصة X (تويتر سابقاً)</h3>
+                    <a href="https://x.com/all_lwa?t=RwlxowViSu8qytgRzHoDKw&s=35" target="_blank" class="social-link shadow-layer-2 animate__animated animate__rotateIn animate__delay-1-2s">
+                        متابعة على منصة X
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                </div>
+                <div class="card shadow-layer-1">
+                    <h3>تيك توك</h3>
+                    <a href="https://www.tiktok.com/@law6k?_t=ZS-8x7oiTGCMue&_r=1" target="_blank" class="social-link shadow-layer-2 animate__animated animate__rotateIn animate__delay-1-5s">
+                        متابعة على تيك توك
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2 class="section-title animate__animated animate__zoomIn">الصفحات العامة</h2>
+            <div class="card-grid">
+                <div class="card shadow-layer-1">
+                    <h3>استشارات قانونية</h3>
+                    <a href="https://www.facebook.com/share/16j8xR1xNJ/" target="_blank" class="social-link shadow-layer-2 animate__animated animate__rotateIn">
+                        فيسبوك استشارات
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/40loe?utm_source=qr&igsh=dHU2Z2VjbDl4MzAz" target="_blank" class="social-link shadow-layer-2 animate__animated animate__rotateIn animate__delay-0-3s">
+                        انستغرام استشارات
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="card shadow-layer-1">
+                    <h3>مكتب محامين كربلاء</h3>
+                    <a href="https://www.instagram.com/10lva?utm_source=qr&igsh=MXNuNm9lbmpveWJxZA==" target="_blank" class="social-link shadow-layer-2 animate__animated animate__rotateIn">
+                        انستغرام مكتب كربلاء
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/share/18HtSt4n8Q/" target="_blank" class="social-link shadow-layer-2 animate__animated animate__rotateIn animate__delay-0-3s">
+                        فيسبوك مكتب كربلاء
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div class="card shadow-layer-1">
+                    <h3>مكتب محامين الحسينية</h3>
+                    <a href="https://www.facebook.com/12lva" target="_blank" class="social-link shadow-layer-2 animate__animated animate__rotateIn">
+                        فيسبوك مكتب الحسينية
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div class="card shadow-layer-1">
+                    <h3>مكتب محامي أحمد العنزي</h3>
+                    <a href="https://www.instagram.com/mb12?utm_source=qr&igsh=MXB5ZnhqcDV6Z2Npdw==" target="_blank" class="social-link shadow-layer-2 animate__animated animate__rotateIn">
+                        انستغرام مكتب أحمد العنزي
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="card shadow-layer-1">
+                    <h3>مكتب الحسينية لعقارات كربلاء</h3>
+                    <a href="https://www.facebook.com/profile.php?id=100076011797002&mibextid=ZbWKwL" target="_blank" class="social-link shadow-layer-2 animate__animated animate__rotateIn">
+                        فيسبوك عقارات كربلاء
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2 class="section-title animate__animated animate__zoomIn">تابعوا قنوات التليجرام</h2>
+            <div class="card-grid">
+                <div class="card shadow-layer-1">
+                    <h3>قناة إعلام محامين العراق</h3>
+                    <a href="https://t.me/all_law" target="_blank" class="social-link shadow-layer-2 animate__animated animate__rotateIn">
+                        انضمام للقناة
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                </div>
+                <div class="card shadow-layer-1">
+                    <h3>مكتب محامين كربلاء (تليجرام)</h3>
+                    <a href="https://t.me/lawxt" target="_blank" class="social-link shadow-layer-2 animate__animated animate__rotateIn animate__delay-0-3s">
+                        انضمام للمكتب
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                </div>
+                <div class="card shadow-layer-1">
+                    <h3>قناة محامي أحمد العنزي (تليجرام)</h3>
+                    <a href="https://t.me/lawl5" target="_blank" class="social-link shadow-layer-2 animate__animated animate__rotateIn animate__delay-0-6s">
+                        انضمام للقناة
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                </div>
+                <div class="card shadow-layer-1">
+                    <h3>صندوق الإسكان فرع كربلاء (تليجرام)</h3>
+                    <a href="https://t.me/lawl3" target="_blank" class="social-link shadow-layer-2 animate__animated animate__rotateIn animate__delay-0-9s">
+                        انضمام للقناة
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                </div>
+                <div class="card shadow-layer-1">
+                    <h3>المصرف العقاري فرع كربلاء (تليجرام)</h3>
+                    <a href="https://t.me/lawxn" target="_blank" class="social-link shadow-layer-2 animate__animated animate__rotateIn animate__delay-1-2s">
+                        انضمام للقناة
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <h3>مكتب المحامي أحمد العنزي</h3>
+            <p>نحن هنا لمساعدتك في جميع قضاياك القانونية</p>
+            
+            <div class="contact-info">
+                <a href="tel:+9647827363331"><i class="fas fa-phone"></i> +964 782 736 3331</a>
+                <a href="https://maps.app.goo.gl/YourGoogleMapsLink" target="_blank"><i class="fas fa-map-marker-alt"></i> كربلاء المقدسة - حي البلدية</a>
+            </div>
+            
+            <p>جميع الحقوق محفوظة © 2025</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Parallax Effect (from first code)
+            const heroSection = document.getElementById('hero-section');
+            const layerDeepBack = document.querySelector('.parallax-layer.layer-deep-back');
+            const layerBack = document.querySelector('.parallax-layer.layer-back');
+            const layerMiddle = document.querySelector('.parallax-layer.layer-middle');
+            const layerFront = document.querySelector('.parallax-layer.layer-front');
+
+            window.addEventListener('scroll', () => {
+                const scrollPos = window.pageYOffset;
+                const heroHeight = heroSection.offsetHeight;
+
+                if (scrollPos <= heroHeight) {
+                    layerDeepBack.style.transform = `translateY(${scrollPos * 0.15}px)`;
+                    layerBack.style.transform = `translateY(${scrollPos * 0.3}px)`;
+                    layerMiddle.style.transform = `translateY(${scrollPos * 0.45}px)`;
+                    layerFront.style.transform = `translateY(${scrollPos * 0.6}px)`;
+                }
+            });
+
+            // 2. Reveal on Scroll Animations (from first code)
+            function revealOnScroll() {
+                const reveals = document.querySelectorAll('.reveal');
+                
+                reveals.forEach(el => {
+                    const windowHeight = window.innerHeight;
+                    const elementTop = el.getBoundingClientRect().top;
+                    const elementVisible = 150;
+
+                    if (elementTop < windowHeight - elementVisible) {
+                        el.classList.add('active');
+                    } else {
+                        // Optional: remove 'active' class when scrolling up to re-trigger
+                        // el.classList.remove('active'); 
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', revealOnScroll);
+            revealOnScroll(); // Trigger for elements visible on initial load
+
+            // 3. Booking Form Logic (Telegram Bot Integration) (from first code)
+            const form = document.getElementById('lawyerForm');
+            // IMPORTANT: Replace with YOUR Telegram Bot Token and Chat ID
+            const token = '7525051560:AAHFIMVmPRFcYxtZHzrzJH5wSaz3O4r5Ci8'; 
+            const chat_id = '1663778949'; 
+            const responseEl = document.getElementById('response');
+
+            if (form) { 
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+
+                    const name = document.getElementById('name').value;
+                    const age = document.getElementById('age').value;
+                    const phone = document.getElementById('phone').value;
+                    const details = document.getElementById('details').value;
+
+                    const message = `
+📩 طلب حجز جديد مع المحامي:
+الاسم: ${name}
+العمر: ${age}
+رقم الهاتف: ${phone}
+تفاصيل القضية:
+${details}
+`;
+
+                    fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            chat_id: chat_id,
+                            text: message
+                        })
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.ok) {
+                            responseEl.innerText = "✅ تم إرسال الطلب بنجاح! سنتواصل معك قريباً.";
+                            responseEl.style.color = "var(--success-green)";
+                            responseEl.classList.add('show');
+                            form.reset();
+                        } else {
+                            responseEl.innerText = "❌ حدث خطأ أثناء إرسال الطلب. يرجى المحاولة لاحقاً.";
+                            responseEl.style.color = "var(--red-accent)";
+                            responseEl.classList.add('show');
+                            console.error("Telegram API Error:", data.description);
+                        }
+                        setTimeout(() => {
+                            responseEl.classList.remove('show');
+                            responseEl.innerText = "";
+                        }, 5000);
+                    })
+                    .catch(error => {
+                        responseEl.innerText = "❌ فشل الاتصال بالخادم. يرجى التحقق من اتصال الإنترنت.";
+                        responseEl.style.color = "var(--red-accent)";
+                        responseEl.classList.add('show');
+                        console.error("Fetch Error:", error);
+                        setTimeout(() => {
+                            responseEl.classList.remove('show');
+                            responseEl.innerText = "";
+                        }, 5000);
+                    });
+                });
+            }
+
+            // 4. Intersection Observer for Card Animations (from second code)
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const cardObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__fadeInUp');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.card').forEach(card => {
+                cardObserver.observe(card);
+            });
+
+            // 5. Pulse Effect on Social Links (from second code)
+            document.querySelectorAll('.social-link').forEach(link => {
+                link.addEventListener('mouseenter', () => {
+                    link.classList.add('animate__animated', 'animate__pulse');
+                });
+                link.addEventListener('mouseleave', () => {
+                    link.classList.remove('animate__animated', 'animate__pulse');
+                });
+            });
+
+            // Apply initial Animate.css classes if element is already in view (for main header and section titles)
+            document.querySelectorAll('.animate__animated').forEach(el => {
+                if (el.getBoundingClientRect().top < window.innerHeight) {
+                    el.style.opacity = 1; // Ensure it's visible if already animated by CSS
+                }
+            });
+        });
+    </script>
+</body>
+</html>
